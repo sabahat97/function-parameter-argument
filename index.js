@@ -1,5 +1,6 @@
 "use strict";
 // parameters and arguments
+Object.defineProperty(exports, "__esModule", { value: true });
 //ex 1
 function teachers(sara, saba, sam) {
     return sara + saba + sam;
@@ -37,3 +38,10 @@ function bike(model, year) {
 //invoking the function
 let detail = bike("honda250 \n", 2024); //output honda250
 console.log(detail); // 2024
+//ex 7 
+function subs(num1, num2) {
+    return num1 - num2;
+}
+//invoking 
+let substraction = subs(131, 121);
+console.log(substraction);

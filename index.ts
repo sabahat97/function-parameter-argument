@@ -47,3 +47,11 @@ function teachers (sara: string , saba: string , sam: string): string{
     //invoking the function
     let detail = bike("honda250 \n", 2024);  //output honda250
     console.log(detail)                      // 2024
+
+    //ex 7 
+    function subs(num1 : number, num2: number):number {
+        return num1 - num2
+    }
+    //invoking 
+    let substraction = subs(131,121);  // output 10
+console.log(substraction);
