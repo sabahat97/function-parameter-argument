@@ -43,5 +43,5 @@ function subs(num1, num2) {
     return num1 - num2;
 }
 //invoking 
-let substraction = subs(131, 121);
+let substraction = subs(131, 121); // output 10
 console.log(substraction);
