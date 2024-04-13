@@ -10,11 +10,12 @@ let cook: string = egg(
 console.log(cook); 
 
 //defeault parameter
-function eggs(salt : string = "salt as per your taste\n", eggs : string = "add 3 eggs\n", oil : string = "oil 4 tablespoon"):string {
+function eggs(salt : string = "salt as per your taste\n", eggs : string = "add 3 eggs\n", oil : string ="2 table spoon"):string {
 return salt + eggs + oil
 };
-let response : string = eggs ();   //output salt as per your taste
-                                  //add 3 eggs
+let response : string = eggs ("salt as per your taste\n", "add 3 eggs\n",  "oil 4 tablespoon");   
+                                   //output salt as per your taste
+                                   //add 3 eggs
  console.log (response);          //oil 4 tablespoon
 
 
@@ -27,8 +28,8 @@ let teacherNames : string = teachers("Ali ", " Sara ", " Zara ");
 console.log(teacherNames);   //output Ali  Sara  Zara
 
 //default parameter
-function teacherss(name1 : string = "Ali", name2: string = " Sara", name3:string =" Zara", name4:string = " Farah"):string{
-    return name1 + name2 + name3 + name4
+function teacherss(name1 : string = "Ali", name2: string = " Sara", name3:string =" Zara",):string{
+    return name1 + name2 + name3
 }
- let teacher : string = teacherss();     //output Ali Sara Zara Farah
+ let teacher : string = teacherss("Farah ", "Zara", " Sara", );     //output Farah Zara Sara 
  console.log(teacher);
